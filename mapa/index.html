@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Metadata -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Default Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+  <!-- Leaflet Maps -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" crossorigin=""></script>
+  <script src="js/leaflet-providers.js"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Signika:400,700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Title and favicon -->
+  <title>Restaurants Map - Time Out Box</title>
+  <link rel="icon" type="png" sizes="16x16" href="images/favicon-map.png">
+</head>
+
+<body>
+
+  <!-- Info -->
+  <section id="infoBox">
+
+    <a href="https://www.timeout.com/barcelona?_ga=2.34010849.1356676183.1578333996-901110454.1577613685">
+      <img class="logo" src="images/logo.jpg" alt="Logo Time Out">
+    </a>
+
+    <h1>TOP 10 RESTAURANTS IN BARCELONA</h1>
+    <h3>Enjoy the best gastronomic selection for two people at half price!</h3>
+    <div class="line"></div>
+
+    <p>Discover the restaurants that you
+      <a href="https://experiences.timeout.cat/box-restaurants?lang=es">
+        will find in the Time Out Box
+      </a>
+      according to their type of cuisine:<br>
+      <span>
+        <select id="kind_food_selector" name="select" class="selectOptions">
+          <option value="" selected>Choose your kind of food</option>
+        </select>
+      </span>
+    </p>
+
+  </section>
+
+  <!-- Map -->
+  <section id="mapBox">
+    <div id="map"></div>
+  </section>
+
+  <!-- Leaflet JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
